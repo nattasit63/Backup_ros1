@@ -1,0 +1,5 @@
+<launch>
+     <!-- <node pkg="rviz" type="rviz" name="rviz"  args="-d $(find turtle_description)/rviz/turtle_config2.rviz"/>  -->
+     <node pkg="turtle_control" type="pub_case3.py" name="publisher_case3"/>
+     <!-- <node pkg="turtle_control" type="ll.py" name="pucase3"/> -->
+</launch>

@@ -1,0 +1,8 @@
+<launch>
+	<node pkg="rosservice" type="rosservice" name="spawn_turtle4" args="call /spawn 5.5445 5.5445 0 'turtle4'" />
+	<!-- <node pkg="rosservice" type="rosservice" name="twodone" args="call /pub2done" /> -->
+	<node pkg="turtlesim" type="turtlesim_node" name="simulatorr2"/>
+	<node pkg="turtle_control" type="giver.py" name="planner"/>
+	<node pkg="turtle_control" type="follower.py" name="controller"/>
+
+</launch>
